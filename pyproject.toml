@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "minimal-mlops"
+version = "0.1.0"
+description = ""
+authors = ["k0tk267 <k0tk2670@gmail.com>"]
+readme = "README.md"
+packages = [{include = "minimal_mlops"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
