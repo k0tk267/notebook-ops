@@ -1,5 +1,5 @@
 run: ## run notebook for train
-	poetry run python scripts/run.py \
+	poetry run python -B scripts/run.py \
 		--input_file "${input_file}" \
 		--output_file "${output_file}" \
 		--batch_size "${batch_size}" \
