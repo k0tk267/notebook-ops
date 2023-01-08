@@ -5,11 +5,8 @@ run: ## run notebook for train
 		--batch_size "${batch_size}" \
 		--epoch "${epoch}"
 
-env:
-	cp .env.example .env
-
-rename:
-	sh scripts/rename.sh \
+setup:
+	sh scripts/setup.sh \
 		"${project_name}" \
 		"${your_name}" \
 		"${your_email}" \
