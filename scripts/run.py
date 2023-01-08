@@ -13,8 +13,12 @@ def main():
     timestamp = dt.now().strftime("%Y-%m-%dT%H:%M:%S")
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("-i", "--input_file", help="実行するNotebookのファイル名", default="train.ipynb")
-    parser.add_argument("-o", "--output_file", help="出力されるNotebookのファイル名", default="result.ipynb")
+    parser.add_argument(
+        "-i", "--input_file", help="実行するNotebookのファイル名", default="train.ipynb"
+    )
+    parser.add_argument(
+        "-o", "--output_file", help="出力されるNotebookのファイル名", default="result.ipynb"
+    )
     parser.add_argument("--batch_size", default="8")
     parser.add_argument("--epoch", default="1000")
     args = parser.parse_args()
