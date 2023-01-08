@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "minimal-mlops"
+name = "your_project_name"
 version = "0.1.0"
 description = ""
-authors = ["k0tk267 <k0tk2670@gmail.com>"]
+authors = ["your_name <your_email>"]
 readme = "README.md"
-packages = [{include = "minimal_mlops"}]
+packages = [{include = "your_package_name"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
