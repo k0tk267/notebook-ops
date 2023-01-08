@@ -1,4 +1,21 @@
-format:
+run: ## run notebook for train
+	poetry run python scripts/run.py \
+		--input_file "${input_file}" \
+		--output_file "${output_file}" \
+		--batch_size "${batch_size}" \
+		--epoch "${epoch}"
+
+env:
+	cp .env.example .env
+
+rename:
+	sh scripts/rename.sh \
+		"${project_name}" \
+		"${your_name}" \
+		"${your_email}" \
+		"${package_name}" \
+
+format: ## format python scripts
 	poetry run black ./src/lib && \
 	poetry run black ./scripts && \
 	poetry run isort ./src/lib && \
