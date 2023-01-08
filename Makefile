@@ -1,3 +1,9 @@
+format:
+	poetry run black ./src/lib && \
+	poetry run black ./scripts && \
+	poetry run isort ./src/lib && \
+	poetry run isort ./scripts
+
 sync-push: ## send data to compute server
 	rsync -auvz --exclude-from rsyncignore.txt . "${TARGET_DIR}"
 
