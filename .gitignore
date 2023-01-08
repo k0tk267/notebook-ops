@@ -2,3 +2,4 @@
 /tmp/
 /data/*
 .venv
+src/lib/__pycache__
