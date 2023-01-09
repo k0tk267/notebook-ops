@@ -1,5 +1,6 @@
 .env
 /tmp/
-/data/*
+/data/processed/*
+/data/raw/*
 .venv
 src/lib/__pycache__

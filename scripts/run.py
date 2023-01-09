@@ -30,7 +30,7 @@ def main():
             "run",
             "papermill",
             f"{PROJECT_PATH}/src/notebooks/{args.input_file}",
-            f"{PROJECT_PATH}/src/notebooks/results/{timestamp}_{args.output_file}",
+            f"{PROJECT_PATH}/data/results/notebooks/{timestamp}_{args.output_file}",
             "-p", "BATCH_SIZE", args.batch_size,
             "-p", "EPOCH", args.epoch,
             "--request-save-on-cell-execute",
@@ -42,7 +42,7 @@ def main():
     # 結果を改変できないようにロック
     subprocess.run([
         "chmod", "-w",
-         f"{PROJECT_PATH}/src/notebooks/results/{timestamp}_{args.output_file}"
+         f"{PROJECT_PATH}/data/results/notebooks/{timestamp}_{args.output_file}"
     ])
     # fmt: on
 
