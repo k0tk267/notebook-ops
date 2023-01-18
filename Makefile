@@ -5,7 +5,7 @@ run: ## run notebook for train
 		--batch_size "${batch_size}" \
 		--epoch "${epoch}"
 
-setup:
+setup:  ## initial setup
 	sh scripts/setup.sh \
 		"${project_name}" \
 		"${your_name}" \
