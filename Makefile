@@ -1,3 +1,16 @@
+build: ## make docker image
+	docker build -t "${image_name}" .
+
+# start: ## run notebook on Docker
+# 	docker run -it --rm --gpus all \
+# 		-v $(PWD):/app \
+# 		-p 8000:8000 \
+# 		"${image_name}" \
+# 		/bin/bash -c "poetry run python scripts/run.py"
+
+lab: ## start JupyterLab on Docker
+	docker-compose up -d
+
 run: ## run notebook for train
 	poetry run python -B scripts/run.py \
 		--input_file "${input_file}" \
