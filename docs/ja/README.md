@@ -19,6 +19,7 @@ make setup \
 │   ├── processed          <- 生データに手を加えた後のデータを入れるフォルダ
 │   ├── raw                <- 生データを入れるフォルダ
 │   └── results
+│         ├── experiments  <- 実験ごとのログやモデルを入れるフォルダ
 │         └── notebooks    <- papermillで実行した結果のNotebookが自動で入るフォルダ
 ├── docs
 │   └── ja                 <- 日本語のドキュメントを入れるフォルダ
