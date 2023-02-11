@@ -25,6 +25,7 @@ make setup \
 │   └── ja                 <- 日本語のドキュメントを入れるフォルダ
 ├── scripts
 │   ├── run.py             <- papermillでNotebookを実行するときに使うファイル
+│   ├── run.py             <- papermillでNotebookを実行するときに使うファイル
 │   └── setup.sh           <- このテンプレート利用時の初期セットセットアップを行うファイル
 ├── src
 │   ├── lib                <- クラスや関数に切り出したものを格納するフォルダ
