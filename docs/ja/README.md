@@ -1,4 +1,4 @@
-# minimal-mlops
+# notebook-ops
 個人レベルで機械学習の実験を行うときに使うと便利なテンプレート  
 [一人寂しく行う小規模MLOps](https://k0tk267.github.io/posts/minimal-mlops)というブログにその他説明を書いた
 

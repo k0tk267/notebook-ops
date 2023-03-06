@@ -1,5 +1,5 @@
-# minimal-mlops
-*This Documentation is translated by ChatGPT based on [Japanese Documentation](https://github.com/k0tk267/minimal-mlops/blob/main/docs/ja/README.md).*
+# notebook-ops
+*This Documentation is translated by ChatGPT based on [Japanese Documentation](https://github.com/k0tk267/notebook-ops/blob/main/docs/ja/README.md).*
 
 A template that is useful when conducting machine learning experiments at the individual level.
 More explanations can be found in my blog post [solo MLOps for small-scale machine learning experiments](https://k0tk267.github.io/posts/minimal-mlops).
