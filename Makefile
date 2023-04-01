@@ -18,6 +18,11 @@ run: ## run notebook for train
 		--batch_size "${batch_size}" \
 		--epoch "${epoch}"
 
+run-by-sh: ## run notebook by shell file
+	bash scripts/run.sh \
+		"${input-file-name}" \
+		"${output-file-name}"
+
 setup:  ## initial setup
 	sh scripts/setup.sh \
 		"${project_name}" \
