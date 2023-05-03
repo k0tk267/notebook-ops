@@ -8,7 +8,7 @@ time_stamp=$(date "+%Y-%m-%dT%H:%M:%S")
 command="
     poetry run papermill \
     ${PROJECT_PATH}/src/notebooks/$input_file_name \
-    ${PROJECT_PATH}/results/notebooks/${time_stamp}_$output_file_name \
+    ${PROJECT_PATH}/output/notebooks/${time_stamp}_$output_file_name \
     -p MAX_TOKEN_LENGTH 512 \
     -p BATCH_SIZE_TRAIN 32 \
     -p BATCH_SIZE_VALID 32 \
