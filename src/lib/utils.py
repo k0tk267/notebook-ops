@@ -2,7 +2,10 @@ from argparse import ArgumentParser
 from logging import DEBUG, FileHandler, Formatter, StreamHandler, getLogger
 
 
-def set_logging(log_file_target: str = None):
+def set_logging(
+        log_file_target: str = None,
+        name: str = None
+    ):
     """
     loggingの設定済みloggerを返す
 
@@ -11,6 +14,8 @@ def set_logging(log_file_target: str = None):
     log_file_target : str
         設定されている場合、ログの出力をファイルとして書き出す
         e.g. '/path/to/your_file.log'
+    name: str
+        ログをバラす再に名前空間を分離する引数
 
     Returns
     -------
@@ -18,6 +23,8 @@ def set_logging(log_file_target: str = None):
         諸々設定済みのlogger
     """
     logger = getLogger(__name__)
+    if name is not None:
+        logger = getLogger(name)
     logger.setLevel(DEBUG)
     logger.propagate = False
     # for stdout
